@@ -38,7 +38,6 @@ void sortList(struct Node* head) {
         ptr = head;
         while (ptr->next != lptr) {
             if (ptr->data > ptr->next->data) {
-                // Hoán đổi dữ liệu
                 int temp = ptr->data;
                 ptr->data = ptr->next->data;
                 ptr->next->data = temp;
